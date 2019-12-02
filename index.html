@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CFH HatePH34R's Halo 5 Stats</title>
+  <!-- Import Google Icon Fonts -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='style.css' media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <div class="preloader-background" style="background-color: black;">
+      <div class="container">
+        <div class="row">
+          <div class="col s6"></div>
+          <h1 class="center card-panel black white-text lighten-2" style="opacity: 0.88;">CFH HatePH34R's Halo 5 stats</h1>
+        </div>
+        <div class="row">
+          <div class="col s6"></div>
+          <div class="preloader-wrapper big active center">
+            <div class="spinner-layer spinner-blue-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="center card-panel black white-text lighten-2" style="opacity: 0.40;">CFH HatePH34R's Halo 5 stats</h1>
+      <div class="row">
+        <div class="col s12 m5 l5">
+          <h1 class="center white-text z-depth-5 card-panel teal lighten-2" style="opacity: 0.88;">Halo 5 Playercard </h1>
+        </div>
+        <div class="col s12 m2 l2"></div>
+        <div class="col s12 m5 l5">
+          <h1 class="center white-text  card-panel teal lighten-2" style="opacity: 0.88;">Arena<br>Win/Loss</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m5 l5">
+          <div id="table1">
+            <table id="spartanappearance" class="hover display blue scale-transition scale-out" style="opacity: 0.88;">
+              <thead>
+                <tr>
+                  <th>Key</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col s2"></div>
+        <div class="col s2">
+          <div class="center white-text card-panel blue lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="matchescomplete"></span></b><br>Matches<br>Completed</div>
+          <div class="center white-text card-panel orange lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="matchestied"></span></b><br>Matches<br>Tied</div>
+        </div>
+        <div class="col s1"></div>
+        <div class="col s2">
+          <div class="center white-text card-panel green lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="matcheswon"></span></b><br>Matches<br>Won</div>
+          <div class="center white-text card-panel red lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="matcheslost"></span></b><br>Matches<br>Lost</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m5 l5">
+          <h1 class="center white-text card-panel teal lighten-2" style="opacity: 0.88;">Commendation Progress</h1>
+        </div>
+        <div class="col l2"></div>
+        <div class="col s12 m5 l5">
+          <h1 class="center white-text  card-panel teal lighten-2" style="opacity: 0.88;">Arena<br>Stats</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m5 l5">
+          <div id="table2">
+            <table id="commendation" class="display blue" style="opacity: 0.88;">
+              <thead>
+                <tr>
+                  <th>Commendation</th>
+                  <th>Progress</th>
+                  <th>Levels complete</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col s2"></div>
+        <div class="col s2">
+          <div class="center white-text card-panel green lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="kills"></span></b><br>Spartan<br>Kills</div>
+          <div class="center white-text card-panel red lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="deaths"></span></b><br>Total<br>Deaths</div>
+        </div>
+        <div class="col s1"></div>
+        <div class="col s2">
+          <div class="center white-text card-panel orange lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="kd"></span></b><br>K/D<br>Ratio</div>
+          <div class="center white-text card-panel blue lighten-2" style="opacity: 0.88;font-size: 1.5vw;"><b><span id="theadshots"></span></b><br>Total<br>Headshots</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="center white-text">
+      <h6>Site Design by <a href="https://jessejamesmedia.com/">JJ Media</a> || Real time Halo 5 Stats provided by <a href="https://developer.haloapi.com/">343's Halo 5 Public API</a><br><span style="font-size: .6vw;">This application is offered by,
+          which is solely responsible for its content. It is not sponsored or endorsed by Microsoft. This application uses the Halo Game Data API. Halo � Microsoft Corporation. All rights reserved. Microsoft, Halo, and the Halo Logo are trademarks
+          of the Microsoft group of companies.</span></h6>
+    </footer>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        $('.preloader-background').delay(1700).fadeOut('slow');
+        $('.preloader-wrapper').delay(1700).fadeOut();
+      });
+    </script>
+
+    <script type="text/javascript">
+      //This function gets the player info from a AWS Lambda Python function
+      //and adds it to the page
+      $(function() {
+        $.ajax({
+            url: "https://qlg8n9tpxh.execute-api.us-east-2.amazonaws.com/default/halo5Stats",
+            cors: true,
+            contentType: 'application/json',
+            type: "GET"
+          })
+          .success(function(data) {
+            //Build the table of basic player info and add it to the page
+            Object.keys(data.appearance).forEach(function(v, i) {
+              var htm = "<tr> <td>"
+              if (v == "Company") {
+                htm += v + "</td><td>" + data.appearance[v].Name + "</td></tr>";
+              } else if (v == "FirstModifiedUtc" || v == "LastModifiedUtc") {
+                htm += v + "</td><td>" + data.appearance[v].ISO8601Date + "</td></tr>";
+              } else {
+                htm += v + "</td><td>" + data.appearance[v] + "</td></tr>";
+              }
+              $("#spartanappearance tbody").append(htm)
+
+            });
+
+            //Build the Commendations table from 2 queries. Commrecord is the
+            //player's Commendation stats, and comm is the Commendation names query
+            Object.keys(data.commrecord.ProgressiveCommendations).forEach(function(currentValue, index) {
+              var inner = data.commrecord.ProgressiveCommendations[index]
+              var htm = "<tr> <td>" + JSON.stringify(inner.Id) + "</td><td>" + JSON.stringify(inner.Progress) + "</td><td>" + JSON.stringify(inner.CompletedLevels) + "</td></tr>";
+              var prog = "a";
+              for (i = 0; i < data.comm.length; i++) {
+                for (j = 0; j < data.comm[i].levels.length; j++) {
+                  if (data.comm[i].levels[j].threshold > inner.Progress) {
+                    prog = data.comm[i].levels[j].threshold
+                    break
+                  }
+                }
+                if (data.comm[i].id == inner.Id) {
+                  var htm = "<tr> <td>" + data.comm[i].name + "</td><td>" + JSON.stringify(inner.Progress) + "/" + JSON.stringify(prog) + "</td><td>" + JSON.stringify(inner.CompletedLevels.length) + "</td></tr>";
+                }
+              }
+
+              $("#commendation tbody").append(htm)
+            });
+
+            //Populate kills/deaths/headshots cards
+            var kills = JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalSpartanKills);
+            var deaths = JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalDeaths);
+            var kd = (kills / deaths).toFixed(3)
+            $('#kills').text(kills);
+            $('#deaths').text(deaths);
+            $('#kd').text(kd);
+            $('#theadshots').text(JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalHeadshots));
+
+            //Populate Arena Match Win/Loss cards
+            $('#matchescomplete').text(JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalGamesCompleted));
+            $('#matchestied').text(JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalGamesTied));
+            $('#matcheswon').text(JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalGamesWon));
+            $('#matcheslost').text(JSON.stringify(data.servicerecord.Results[0].Result.ArenaStats.TotalGamesLost));
+
+            $(document).ready(function() {
+              //After document has loaded, create DataTables from the existing tables for player appearance and commendations
+              $('#spartanappearance').DataTable({
+                "searching": false,
+                "paging": false,
+                "info": ""
+              });
+              $('#commendation').DataTable({
+                scrollY: '40vh',
+                scrollCollapse: true,
+                paging: false,
+                "searching": false,
+                "info": ""
+
+              });
+            });
+            let s = document.querySelector('.hover');
+            s.classList.remove('scale-out');
+            s.classList.add('scale-in');
+
+          })
+          .fail(function(error) {
+            alert("Error: " + error);
+          });
+      });
+    </script>
+  </div>
+</body>
+
+</html>
