@@ -1,13 +1,13 @@
 # My Halo 5 Stats
 
-This page calls an AWS Lambda Python (found [here](https://github.com/hateph34r/my-halo-5-stats-lambda-function)) function to access 343's Halo 5 Game Data API and display the results from the queries using Materialize and DataTables to display the information. I'm a gamer & data nerd and I have a larger personal application that ties together all of my gaming stats, and thought this would be a great addition (and a great portfolio piece as well). A simple, lightweight Materialize based website.
+This page calls an AWS Lambda Python (found [here](https://github.com/jgardner117/my-halo-5-stats-lambda-function)) function to access 343's Halo 5 Game Data API and display the results from the queries using Materialize and DataTables to display the information. I'm a gamer & data nerd and I have a larger personal application that ties together all of my gaming stats, and thought this would be a great addition (and a great portfolio piece as well). A simple, lightweight Materialize based website.
 
-Check it out! https://hateph34r.github.io/my-halo-5-stats/
+Check it out! https://jgardner117.github.io/my-halo-5-stats/
 
 
 
 ## Authors
-* **Jesse Gardner** - *Creator* - [Github](https://github.com/HatePH34R)
+* **Jesse Gardner** - *Creator* - [Github](https://github.com/jgardner117)
 
 ## Built with:
 * [AWS Lambda](https://aws.amazon.com/lambda/)
